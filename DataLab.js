@@ -32,10 +32,12 @@ const hideMysteryCardShowTidBit = () => {
     let mysteryCard2 = document.querySelector('#load2');
     let tidBit = document.querySelector('#tid-bit');
     let battleHistory = document.querySelector('.battleHistory');
+    let totalHistory = document.querySelector('#battle-info');
     mysteryCard1.style.display = 'none';
     mysteryCard2.style.display = 'none';
     tidBit.style.visibility = 'visible';
     battleHistory.style.visibility = 'visible';
+    totalHistory.innerText = '';
 }
 
 // object of pokemon types and their corresponding color
@@ -283,9 +285,13 @@ const secondPokemon = async () => {
 const get2Pokemon = () => {
     firstPokemon();
     secondPokemon();
-    let audio = document.querySelector('audio');
-    audio.play();
     hideMysteryCardShowTidBit();
+    
+    //autoplay music when get pokemon button is pressed
+    // let audio = document.querySelector('audio');
+    // audio.play();
+    
+    
 }
 
 // function that allow pokemon to "battle" and randomly declares a winner
