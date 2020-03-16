@@ -4,7 +4,7 @@ html{
     height: inherit; 
     padding: 0px;
      background-color: #FA4545;
-    
+    /* min-height: 100vh; */
     
 }
 
@@ -15,8 +15,9 @@ body{
     background-color:#4563FA;
     font-family: 'Turret Road', sans-serif;
     justify-content: space-around;
-    border: 20px solid #FA4545;
+    /* border: 20px solid #FA4545; */
     border-radius: 10px;
+    min-height: 100vh;
     
 }
 
@@ -34,6 +35,7 @@ top: 168px;
     align-items: center;
     justify-content: center;
     width: 600px;
+    height: 1%;
     
 }
 
@@ -91,11 +93,12 @@ audio{
     opacity: 1;
     box-shadow: 6px 6px 5px  #888888;
     border-radius: 10px;
+    height: 355px;
 }
 
 #poke1, #poke2{
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 94px;
     border: 4.5px outset gold;
     box-shadow: 4px 4px 3px  #888888;
     background-color: white;
@@ -126,11 +129,17 @@ margin-left: 20px;
     font-weight: bolder;
     position: absolute;
     z-index: 1;
-    margin-top: 59px;
-    margin-left: 21px;
+    margin-top: 77px;
+    margin-left: 53px;
     border-bottom: 1px solid lightgray;
     border-right: 1px solid lightgray;
     background-color: white;
+    font-size: smaller;
+}
+
+.fake-type1, .fake-type2{
+    margin-top: 59px;
+    margin-left: 55px;
 }
 
 h3{
@@ -174,8 +183,8 @@ iframe{
     background-color: white;
 }
 #mystery1, #mystery2{
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 94px;
     border: 4.5px outset gold;
     box-shadow: 4px 4px 3px  #888888;
 }
@@ -185,3 +194,12 @@ ul{
 #tid-bit{
     visibility: hidden;
 }
+
+@media only screen and (max-width: 600px) {
+    #ash, #rocket {
+        visibility: hidden;
+    }
+    .game{
+        width: 50%;
+    }
+  }
