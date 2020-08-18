@@ -1,6 +1,7 @@
 # Bri's PokéBattles
+![Bri's PokeBattle screenshot](https://www.bricoded.com/static/media/Pokemon.53c18ccf.png)
 
-*An app that simulates Pokemon battles.*
+*An app that simulates Pokemon battles between your favorite Pokemon.*
 
 ### Tech
 + PokéAPI
